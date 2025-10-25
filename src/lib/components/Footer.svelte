@@ -8,19 +8,19 @@
 	}
 </script>
 
-<footer class="bg-gradient-to-br from-green-50 to-green-100 border-t border-green-200">
+<footer class="dark-section">
 	<div class="container-custom section-padding">
 		<div class="grid md:grid-cols-3 gap-8">
 			<div>
 				<div class="flex items-center space-x-3 mb-4">
-					<div class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
+					<div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background-color: #0b362a;">
 						<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
 						</svg>
 					</div>
-					<h3 class="text-xl font-bold text-gray-900">Glamping Micmanice</h3>
+					<h3 class="text-xl font-bold text-white">Glamping Micmanice</h3>
 				</div>
-				<p class="text-gray-600 mb-4">
+				<p class="text-white/90 mb-4">
 					Magické momenty v srdci Jižní Moravy. Romantika, klid a nezapomenutelné zážitky v krásné vinařské krajině.
 				</p>
 				<div class="flex space-x-4">
@@ -43,23 +43,23 @@
 			</div>
 			
 			<div>
-				<h3 class="text-xl font-bold mb-4 text-gray-900">Kontakt</h3>
-				<div class="space-y-3 text-gray-600">
+				<h3 class="text-xl font-bold mb-4 text-white">Kontakt</h3>
+				<div class="space-y-3 text-white/90">
 					<div class="flex items-center space-x-3">
-						<svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
 						</svg>
 						<span>Micmanice, Jižní Morava</span>
 					</div>
 					<div class="flex items-center space-x-3">
-						<svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
 						</svg>
 						<span>+420 123 456 789</span>
 					</div>
 					<div class="flex items-center space-x-3">
-						<svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
 						</svg>
 						<span>info@glamping-micmanice.cz</span>
@@ -68,15 +68,15 @@
 			</div>
 			
 			<div>
-				<h3 class="text-xl font-bold mb-4 text-gray-900">Speciální nabídka</h3>
-				<div class="bg-green-600 text-white p-4 rounded-xl mb-4">
+				<h3 class="text-xl font-bold mb-4 text-white">Speciální nabídka</h3>
+				<div class="text-white p-4 rounded-xl mb-4" style="background-color: #0b362a;">
 					<div class="flex items-center space-x-2 mb-2">
 						<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
 						</svg>
 						<span class="font-bold">20% sleva na první pobyt!</span>
 					</div>
-					<p class="text-green-100 text-sm">Zaregistrujte se nyní a získejte slevu</p>
+					<p class="text-white/80 text-sm">Zaregistrujte se nyní a získejte slevu</p>
 				</div>
 				<button 
 					class="btn-primary w-full"
@@ -87,7 +87,7 @@
 			</div>
 		</div>
 		
-		<div class="border-t border-green-200 mt-8 pt-8 text-center text-gray-500">
+		<div class="border-t border-white/20 mt-8 pt-8 text-center text-white/70">
 			<p>&copy; 2024 Glamping Micmanice. Všechna práva vyhrazena.</p>
 		</div>
 	</div>

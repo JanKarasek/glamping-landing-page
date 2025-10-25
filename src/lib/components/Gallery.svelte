@@ -54,7 +54,7 @@
 <section class="section-padding bg-white">
 	<div class="container-custom">
 		<div class="text-center mb-12">
-			<h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+			<h2 class="text-3xl sm:text-4xl font-bold mb-4" style="color: #0b362a;">
 				Magické <span class="text-gradient">momentky</span>
 			</h2>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto">
