@@ -175,6 +175,7 @@ body {
 }
 
 /* Header */
+
 .header {
   position: fixed;
   top: 0;
@@ -185,6 +186,11 @@ body {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.header:hover {
+  background: linear-gradient(90deg, #059669 0%, #34d399 100%);
 }
 
 /* Grid system */

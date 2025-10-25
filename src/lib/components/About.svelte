@@ -1,4 +1,4 @@
-<section class="section-padding bg-white">
+<section id="about" class="py-16 bg-white">
 	<div class="container-custom">
 		<div class="grid lg:grid-cols-2 gap-12 items-center">
 			<div>

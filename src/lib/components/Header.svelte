@@ -1,5 +1,7 @@
 <script lang="ts">
   import { Facebook, Twitter, Instagram, Menu } from 'lucide-svelte';
+  import { createEventDispatcher } from 'svelte';
+  const dispatch = createEventDispatcher();
 </script>
 
 <header class="absolute top-0 left-0 w-full z-50 py-6 px-10 md:px-16 text-white">
@@ -9,12 +11,10 @@
 
     <nav class="hidden md:block absolute left-1/2 -translate-x-1/2">
       <ul class="flex items-center gap-8">
-        <li><a href="/" class="font-semibold text-brand-light">Home</a></li>
-        <li><a href="/about" class="hover:text-brand-light transition-colors">About Us</a></li>
-        <li><a href="/cottages" class="hover:text-brand-light transition-colors">Cottages</a></li>
-        <li><a href="/activities" class="hover:text-brand-light transition-colors">Activities</a></li>
-        <li><a href="/blog" class="hover:text-brand-light transition-colors">Blog</a></li>
-        <li><a href="/contact" class="hover:text-brand-light transition-colors">Contact Us</a></li>
+        <li><a href="/" class="hover:text-brand-light text-brand-light font-semibold transition-colors">Domů</a></li>
+        <li><a href="#about" class="hover:text-brand-light transition-colors">Proč?</a></li>
+        <li><a href="#magic" class="hover:text-brand-light transition-colors">Magické momenty</a></li>
+        <li><a href="#" class="hover:text-brand-light transition-colors" on:click={() => dispatch('openModal')}>Mám zájem</a></li>
       </ul>
     </nav>
 

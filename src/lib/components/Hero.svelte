@@ -1,50 +1,36 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
-	
+	// Obrázek bereme jako "prop", abychom ho mohli snadno změnit.
+	// Výchozí hodnota odpovídá souboru v /static/hero-bg.jpg
+	export let imageSrc: string = "/hero-bg.jpg";
+
 	const dispatch = createEventDispatcher();
-	
-	function handleInterestClick() {
-		dispatch('openModal');
-	}
 </script>
 
-<section class="hero relative min-h-screen flex items-center justify-center overflow-hidden">
-	<!-- Background Image -->
-	<div class="absolute inset-0 z-0">
-		<img 
-			src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" 
-			alt="Glamping ubytování na poli" 
-			class="w-full h-full object-cover"
-		/>
-		<div class="absolute inset-0 bg-black/60"></div>
-		<div class="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-black to-transparent"></div>
-	</div>
-	
-	<!-- Content -->
-	<div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto pt-20">
-		<h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-			<span class="block">Magické momenty</span>
-			<span class="block text-green-200">v srdci Jižní Moravy</span>
+<section
+	class="relative min-h-screen flex items-center justify-center text-center text-white bg-cover bg-center"
+	style="background-image: url({imageSrc})"
+>
+	<div class="absolute inset-0 bg-black/60" aria-hidden="true"></div>
+
+	<div class="relative z-10 p-4">
+		<h1 class="text-5xl md:text-7xl font-bold tracking-tight">
+			Glamping Micmanice
 		</h1>
-	
-		<p class="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-			Zažijte romantiku glampingu v krásné vinařské oblasti Micmanice. 
-			Blízko rakouských hranic, historických bunkrů a nádherné přírody.
+		<h2 class="text-3xl md:text-5xl font-light mt-2">
+			Romantika, příroda, vinařství
+		</h2>
+		<p class="mt-6 text-lg max-w-2xl mx-auto">
+			Zažijte jedinečné ubytování v srdci Jižní Moravy. Komfortní glamping
+			v krajině vinic, blízko rakouských hranic a historických bunkrů.
+			Vytvořte si nezapomenutelné zážitky v přírodě.
 		</p>
-		
-		<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-			<button 
-				on:click={handleInterestClick}
-				class="btn-primary text-lg px-10 py-4"
-			>
-				Mám zájem o ubytování
-			</button>
-			<button 
-				on:click={handleInterestClick}
-				class="btn-secondary text-lg px-10 py-4"
-			>
-				Chci se ubytovat
-			</button>
-		</div>
+
+		<button
+			on:click={() => dispatch("openModal")}
+			class="inline-block mt-10 bg-brand hover:bg-brand-dark text-white font-bold py-3 px-10 rounded-full transition-colors text-lg"
+		>
+			Mám zájem o ubytování
+		</button>
 	</div>
 </section>
