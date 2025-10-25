@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { supabase } from "$lib/supabaseClient";
+
 	export let show = false;
 	
 	let formData = {
@@ -18,20 +20,25 @@
 		
 		isSubmitting = true;
 		
+		// Uložení do Supabase
+		const { error } = await supabase.from('interests').insert([
+			{
+				email: formData.email,
+				price_range: formData.priceRange
+			}
+		]);
+
 		// Simulate form submission
 		await new Promise(resolve => setTimeout(resolve, 1000));
 		
 		submitted = true;
 		isSubmitting = false;
 		
-		// Reset form after 3 seconds
-		setTimeout(() => {
-			submitted = false;
-			formData = {
-				email: '',
-				priceRange: '',
-			};
-		}, 3000);
+		// Reset pouze formulář, modal zůstává otevřený
+		formData = {
+			email: '',
+			priceRange: '',
+		};
 	}
 	
 	function handleBackdropClick(event: MouseEvent) {
@@ -133,9 +140,6 @@
 					<h3 class="text-xl font-bold text-gray-900 mb-2">Děkujeme!</h3>
 					<p class="text-gray-600 mb-4">
 						Moc děkujeme za váš zájem o Glamping Micmanice! Projekt zatím připravujeme a jakmile bude vše hotové, ozveme se vám na e-mail. Pošleme vám také slevový kód na 20% na první pobyt.
-					</p>
-					<p class="text-sm text-brand font-semibold">
-						Pamatujte si: máte nárok na 20% slevu na první pobyt!
 					</p>
 					<button 
 						on:click={closeModal}
