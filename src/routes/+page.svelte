@@ -22,14 +22,14 @@
 	<meta name="description" content="Zažijte romantiku glampingu v krásné vinařské oblasti Micmanice. Blízko rakouských hranic, historických bunkrů a nádherné přírody." />
 </svelte:head>
 
-<Header on:openModal={openModal} />
+<Header openModal={openModal} />
 
 <main class="min-h-screen">
-	<Hero on:openModal={openModal} />
+	<Hero openModal={openModal} />
 	<About />
-	<Gallery on:openModal={openModal} />
-	<Contact on:openModal={openModal} />
-	<Footer on:openModal={openModal} />
+	<Gallery openModal={openModal} />
+	<Contact openModal={openModal} />
+	<Footer openModal={openModal} />
 </main>
 
 <InterestModal bind:show={showModal} on:close={closeModal} />

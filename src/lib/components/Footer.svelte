@@ -1,11 +1,5 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte';
-	
-	const dispatch = createEventDispatcher();
-	
-	function openModal() {
-		dispatch('openModal');
-	}
+	export let openModal: () => void;
 </script>
 
 <footer class="dark-section">
@@ -80,7 +74,7 @@
 				</div>
 				<button 
 					class="btn-primary w-full"
-					on:click={openModal}
+					on:click={() => { if (typeof openModal === 'function') openModal(); }}
 				>
 					Mám zájem
 				</button>

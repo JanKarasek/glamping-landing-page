@@ -1,8 +1,4 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte';
-	
-	const dispatch = createEventDispatcher();
-	
 	export let show = false;
 	
 	let formData = {
@@ -15,7 +11,6 @@
 	
 	function closeModal() {
 		show = false;
-		dispatch('close');
 	}
 	
 	async function handleSubmit() {

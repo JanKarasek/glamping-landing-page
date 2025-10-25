@@ -1,8 +1,6 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte';
-	
-	const dispatch = createEventDispatcher();
-	
+	export let openModal: (() => void) | undefined;
+
 	let contactForm = {
 		name: '',
 		email: '',
@@ -34,10 +32,6 @@
 				message: ''
 			};
 		}, 3000);
-	}
-	
-	function openInterestModal() {
-		dispatch('openModal');
 	}
 </script>
 
@@ -99,7 +93,7 @@
 						Zaregistrujte se nyní a získejte 20% slevu na první pobyt v našem glampingu.
 					</p>
 					<button 
-						on:click={openInterestModal}
+						on:click={() => { if (typeof openModal === 'function') openModal(); }}
 						class="bg-white text-green-600 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition-colors"
 					>
 						Zaregistrovat zájem

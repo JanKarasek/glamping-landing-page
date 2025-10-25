@@ -1,10 +1,9 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte';
 	// Obrázek bereme jako "prop", abychom ho mohli snadno změnit.
 	// Výchozí hodnota odpovídá souboru v /static/hero-bg.jpg
 	export let imageSrc: string = "/hero-bg.jpg";
 
-	const dispatch = createEventDispatcher();
+	export let openModal: (() => void) | undefined;
 </script>
 
 <section
@@ -27,7 +26,7 @@
 		</p>
 
 		<button
-			on:click={() => dispatch("openModal")}
+			on:click={() => { if (typeof openModal === 'function') openModal(); }}
 			class="inline-block mt-10 bg-brand hover:bg-brand-dark text-white font-bold py-3 px-10 rounded-full transition-colors text-lg"
 		>
 			Mám zájem o ubytování

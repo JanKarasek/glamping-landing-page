@@ -1,8 +1,6 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte';
-	
-	const dispatch = createEventDispatcher();
-	
+	export let openModal: (() => void) | undefined;
+
 	let currentSlide = 0;
 	
 	const images = [
@@ -113,9 +111,7 @@
 			</p>
 			<button 
 				class="btn-primary text-lg px-8 py-3"
-				on:click={() => {
-					dispatch('openModal');
-				}}
+				on:click={() => { if (typeof openModal === 'function') openModal(); }}
 			>
 				Mám zájem o ubytování
 			</button>
