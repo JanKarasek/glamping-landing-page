@@ -1,5 +1,6 @@
 <script lang="ts">
     import { supabase } from "$lib/supabaseClient";
+    import { t } from '$lib/i18n';
 
 	export let show = false;
 	
@@ -70,8 +71,8 @@
 									</svg>
 								</div>
 								<div>
-									<h2 class="text-2xl font-bold text-gray-900">Zadejte svůj e-mail</h2>
-									<p class="text-brand-dark font-medium">Získáte 20% slevu na první pobyt</p>
+									<h2 class="text-2xl font-bold text-gray-900">{$t('modal.title')}</h2>
+									<p class="text-brand-dark font-medium">{$t('modal.subtitle')}</p>
 								</div>
 							</div>
 							<button 
@@ -84,71 +85,71 @@
 								</svg>
 							</button>
 						</div>
-						<p class="mt-2 text-sm text-zinc-100 rounded px-3 py-2">
-							Moc děkujeme za Váš zájem, vážíme si jej! Projekt je zatím v <b>přípravné fázi</b>. Pokud nám necháte e-mail, ozveme se vám ihned, jak bude vše připraveno, a zašleme vám slevový kód na <b>20% na první pobyt</b>.
-						</p>
-					</div>
-				</div>
-				<!-- Form -->
-				<form on:submit|preventDefault={handleSubmit} class="p-6 space-y-4">
-					<div>
-						<label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-mail *</label>
-						<input 
+                        <p class="mt-2 text-sm text-zinc-100 rounded px-3 py-2">
+                            {@html $t('modal.info')}
+                        </p>
+                    </div>
+                </div>
+                <!-- Form -->
+                <form on:submit|preventDefault={handleSubmit} class="p-6 space-y-4">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">{$t('modal.emailLabel')}</label>
+                        <input 
 							type="email" 
 							id="email" 
 							bind:value={formData.email}
 							required
 							class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand"
 						/>
-					</div>
-					<div>
-						<label for="priceRange" class="block text-sm font-medium text-gray-700 mb-1">Kolik byste byli ochotni zaplatit za noc? *</label>
-						<select 
+                    </div>
+                    <div>
+                        <label for="priceRange" class="block text-sm font-medium text-gray-700 mb-1">{$t('modal.priceLabel')}</label>
+                        <select 
 							id="priceRange" 
 							bind:value={formData.priceRange}
 							required
 							class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand"
 						>
-							<option value="">Vyberte cenovou kategorii</option>
-							<option value="1000-1500">1 000 - 1 500 Kč</option>
-							<option value="1500-2000">1 500 - 2 000 Kč</option>
-							<option value="2000-2500">2 000 - 2 500 Kč</option>
-							<option value="2500-3000">2 500 - 3 000 Kč</option>
-							<option value="3000+">3 000+ Kč</option>
-						</select>
-					</div>
-					<button 
+                            <option value="">{$t('modal.pricePlaceholder')}</option>
+                            <option value="1000-1500">1 000 - 1 500 Kč / 40-60 €</option>
+                            <option value="1500-2000">1 500 - 2 000 Kč / 60-80 €</option>
+                            <option value="2000-2500">2 000 - 2 500 Kč / 80-100 €</option>
+                            <option value="2500-3000">2 500 - 3 000 Kč / 100-120 €</option>
+                            <option value="3000+">3 000+ Kč / 120+ €</option>
+                        </select>
+                    </div>
+                    <button 
 						type="submit" 
 						disabled={isSubmitting}
 						class="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
 					>
 						{#if isSubmitting}
-							Odesílám...
+							{$t('modal.submitting')}
 						{:else}
-							Odeslat zájem
+							{$t('modal.submit')}
 						{/if}
 					</button>
-				</form>
-			{:else}
-				<!-- Success message -->
-				<div class="p-6 text-center">
-					<div class="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center mx-auto mb-4">
-						<svg class="w-8 h-8 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-						</svg>
-					</div>
-					<h3 class="text-xl font-bold text-gray-900 mb-2">Děkujeme!</h3>
-					<p class="text-gray-600 mb-4">
-						Moc děkujeme za váš zájem o Glamping Micmanice! Projekt zatím připravujeme a jakmile bude vše hotové, ozveme se vám na e-mail. Pošleme vám také slevový kód na 20% na první pobyt.
-					</p>
-					<button 
-						on:click={closeModal}
-						class="mt-4 btn-primary"
-					>
-						Zavřít
-					</button>
-				</div>
-			{/if}
+                </form>
+            {:else}
+                <!-- Success message -->
+                <div class="p-6 text-center">
+                    <div class="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">{$t('modal.successTitle')}</h3>
+                    <p class="text-gray-600 mb-4">
+                        {$t('modal.successText')}
+                    </p>
+                    <button 
+                        on:click={closeModal}
+                        class="mt-4 btn-primary"
+                    >
+                        {$t('modal.close')}
+                    </button>
+                </div>
+            {/if}
 		</div>
 	</div>
 {/if}

@@ -1,0 +1,94 @@
+{
+  "header": {
+    "home": "Startseite",
+    "why": "Warum?",
+    "moments": "Magische Momente",
+    "interest": "Ich habe Interesse",
+    "openMenu": "Menü öffnen"
+  },
+  "hero": {
+    "title": "Glamping Micmanice",
+    "subtitle": "Romantik, Natur, Weinbau",
+    "description": "Erleben Sie eine einzigartige Unterkunft im Herzen Südmährens. Komfortables Glamping in einer Landschaft aus Weinbergen, nahe der österreichischen Grenze und historischen Bunkern. Schaffen Sie unvergessliche Erlebnisse in der Natur.",
+    "cta": "Ich habe Interesse an einer Unterkunft"
+  },
+  "modal": {
+    "title": "Geben Sie Ihre E-Mail-Adresse ein",
+    "subtitle": "Sie erhalten 20% Rabatt auf Ihren ersten Aufenthalt",
+    "info": "Vielen Dank für Ihr Interesse, wir wissen es sehr zu schätzen! Das Projekt befindet sich noch in der <b>Vorbereitungsphase</b>. Wenn Sie uns Ihre E-Mail-Adresse hinterlassen, werden wir uns bei Ihnen melden, sobald alles fertig ist, und Ihnen einen Rabattcode von <b>20% auf Ihren ersten Aufenthalt</b> zusenden.",
+    "emailLabel": "E-Mail *",
+    "priceLabel": "Wie viel wären Sie bereit, pro Nacht zu zahlen? *",
+    "pricePlaceholder": "Wählen Sie eine Preiskategorie",
+    "submit": "Interesse senden",
+    "submitting": "Wird gesendet...",
+    "successTitle": "Vielen Dank!",
+    "successText": "Vielen Dank für Ihr Interesse am Glamping Micmanice! Wir bereiten das Projekt gerade vor und werden uns per E-Mail bei Ihnen melden, sobald alles fertig ist. Wir senden Ihnen auch einen Rabattcode von 20% für Ihren ersten Aufenthalt.",
+    "close": "Schließen"
+  },
+  "about": {
+    "title": "Warum Micmanice wählen?",
+    "wineTitle": "Weinregion",
+    "wineText": "Wir befinden uns im Herzen Südmährens, umgeben von wunderschönen Weinbergen und traditionellen Weinkellern. Ideal für Weinliebhaber und romantische Spaziergänge.",
+    "bunkersTitle": "Historische Bunker",
+    "bunkersText": "In der Umgebung finden Sie interessante Militärbunker aus der Zeit des Zweiten Weltkriegs. Perfekt für Geschichtsliebhaber und abenteuerliche Ausflüge.",
+    "borderTitle": "Nahe der österreichischen Grenze",
+    "borderText": "Ideale Lage für Ausflüge nach Österreich. Sie können während Ihres Aufenthalts problemlos Wien oder die schönen österreichischen Alpen besuchen.",
+    "romanceTitle": "Romantische Erlebnisse",
+    "romanceText": "Abende unter den Sternen, Frühstück in der Natur, Spaziergänge durch die Weinberge. Schaffen Sie unvergessliche Erinnerungen mit Ihrem Partner.",
+    "discountText": "Rabatt auf den ersten Aufenthalt"
+  },
+  "gallery": {
+    "galleryTitle": "Magische Momente",
+    "description": "Stellen Sie sich die schönsten Momente vor, die Sie in unserem Glamping erleben können. Romantik, Ruhe und unvergessliche Erlebnisse erwarten Sie.",
+    "slideDescription": "Ein unvergessliches Erlebnis im Herzen Südmährens",
+    "ctaText": "Möchten Sie diese schönen Momente selbst erleben?",
+    "ctaButton": "Ich habe Interesse an einer Unterkunft",
+    "prevAria": "Vorheriges Bild",
+    "nextAria": "Nächstes Bild",
+    "goToAria": "Gehe zu Bild",
+    "alt": {
+      "interior": "Luxuriöses Glamping-Interieur",
+      "breakfast": "Romantisches Frühstück beim Glamping",
+      "fire": "Abend am Feuer beim Glamping",
+      "landscape": "Weinregion Südmähren"
+    },
+    "title": {
+      "interior": "Luxuriöses Interieur",
+      "breakfast": "Frühstück in der Natur",
+      "fire": "Abende am Feuer",
+      "landscape": "Weinlandschaft"
+    },
+    "cta": "Ich habe Interesse an einer Unterkunft"
+  },
+  "contact": {
+    "title": "Haben Sie Fragen?",
+    "description": "Wir beantworten gerne alle Ihre Fragen. Zögern Sie nicht, uns zu kontaktieren!",
+    "emailTitle": "E-Mail",
+    "phoneTitle": "Telefon",
+    "locationTitle": "Standort",
+    "locationText": "Micmanice, Südmähren",
+    "offerTitle": "Sonderangebot!",
+    "offerText": "Registrieren Sie sich jetzt und erhalten Sie 20% Rabatt auf Ihren ersten Aufenthalt in unserem Glamping.",
+    "offerCta": "Interesse registrieren",
+    "formTitle": "Schreiben Sie uns",
+    "formName": "Vor- und Nachname *",
+    "formEmail": "E-Mail *",
+    "formPhone": "Telefon",
+    "formMessage": "Nachricht *",
+    "formPlaceholder": "Was interessiert Sie an unserem Glamping?",
+    "formSubmitting": "Wird gesendet...",
+    "formSubmit": "Nachricht senden",
+    "formSuccessTitle": "Vielen Dank!",
+    "formSuccessText": "Ihre Nachricht wurde erfolgreich gesendet. Wir werden Sie in Kürze kontaktieren."
+  },
+  "footer": {
+    "title": "Glamping Micmanice",
+    "description": "Magische Momente im Herzen Südmährens. Romantik, Ruhe und unvergessliche Erlebnisse in einer wunderschönen Weinlandschaft.",
+    "contactTitle": "Kontakt",
+    "offerTitle": "Sonderangebot",
+    "offerHighlight": "20% Rabatt auf den ersten Aufenthalt!",
+    "offerText": "Registrieren Sie sich jetzt und erhalten Sie einen Rabatt",
+    "cta": "Ich habe Interesse",
+    "copyright": "Glamping Micmanice. Alle Rechte vorbehalten."
+  }
+}

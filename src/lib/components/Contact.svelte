@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { supabase } from '$lib/supabaseClient';
+	import { t } from '$lib/i18n';
 	export let openModal: (() => void) | undefined;
 
 	let contactForm = {
@@ -52,11 +53,11 @@
 			<!-- Contact Info -->
 			<div>
 				<h2 class="text-3xl sm:text-4xl font-bold mb-6" style="color: #0b362a;">
-					Máte <span class="text-gradient">otázky</span>?
+					{$t('contact.title')}
 				</h2>
 				
 				<p class="text-lg text-gray-600 mb-8">
-					Rádi vám odpovíme na všechny vaše dotazy. Neváhejte nás kontaktovat!
+					{$t('contact.description')}
 				</p>
 				
 				<div class="space-y-6">
@@ -67,9 +68,8 @@
 							</svg>
 						</div>
 						<div>
-							<h3 class="font-semibold text-gray-900">E-mail</h3>
-							<p class="text-gray-600">
-							<p class="text-gray-600">+420 123 456 789</p>
+							<h3 class="font-semibold text-gray-900">{$t('contact.emailTitle')}</h3>
+							<p class="text-gray-600">info@glamping-micmanice.cz</p>
 						</div>
 					</div>
 					
@@ -81,22 +81,22 @@
 							</svg>
 						</div>
 						<div>
-							<h3 class="font-semibold text-gray-900">Lokace</h3>
-							<p class="text-gray-600">Micmanice, Jižní Morava</p>
+							<h3 class="font-semibold text-gray-900">{$t('contact.locationTitle')}</h3>
+							<p class="text-gray-600">{$t('contact.locationText')}</p>
 						</div>
 					</div>
 				</div>
 				
-				<div class="mt-8 p-6 bg-green-600 text-white rounded-xl">
-					<h3 class="text-xl font-bold mb-2">Speciální nabídka!</h3>
+				<div class="mt-8 p-6 bg-brand text-white rounded-xl">
+					<h3 class="text-xl font-bold mb-2">{$t('contact.offerTitle')}</h3>
 					<p class="mb-4">
-						Zaregistrujte se nyní a získejte 20% slevu na první pobyt v našem glampingu.
+						{$t('contact.offerText')}
 					</p>
 					<button 
 						on:click={() => { if (typeof openModal === 'function') openModal(); }}
-						class="bg-white text-green-600 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition-colors"
+						class="bg-white text-brand font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition-colors"
 					>
-						Zaregistrovat zájem
+						{$t('contact.offerCta')}
 					</button>
 				</div>
 			</div>
@@ -104,50 +104,50 @@
 			<!-- Contact Form -->
 			<div class="bg-white rounded-2xl shadow-xl p-8">
 				{#if !submitted}
-					<h3 class="text-2xl font-bold text-gray-900 mb-6">Napište nám</h3>
+					<h3 class="text-2xl font-bold text-gray-900 mb-6">{$t('contact.formTitle')}</h3>
 					
 					<form on:submit|preventDefault={handleSubmit} class="space-y-6">
 						<div>
-							<label for="contact-name" class="block text-sm font-medium text-gray-700 mb-2">Jméno a příjmení *</label>
+							<label for="contact-name" class="block text-sm font-medium text-gray-700 mb-2">{$t('contact.formName')}</label>
 							<input 
 								type="text" 
 								id="contact-name" 
 								bind:value={contactForm.name}
 								required
-								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors"
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand transition-colors"
 							/>
 						</div>
 						
 						<div>
-							<label for="contact-email" class="block text-sm font-medium text-gray-700 mb-2">E-mail *</label>
+							<label for="contact-email" class="block text-sm font-medium text-gray-700 mb-2">{$t('contact.formEmail')}</label>
 							<input 
 								type="email" 
 								id="contact-email" 
 								bind:value={contactForm.email}
 								required
-								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors"
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand transition-colors"
 							/>
 						</div>
 						
 						<div>
-							<label for="contact-phone" class="block text-sm font-medium text-gray-700 mb-2">Telefon</label>
+							<label for="contact-phone" class="block text-sm font-medium text-gray-700 mb-2">{$t('contact.formPhone')}</label>
 							<input 
 								type="tel" 
 								id="contact-phone" 
 								bind:value={contactForm.phone}
-								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors"
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand transition-colors"
 							/>
 						</div>
 						
 						<div>
-							<label for="contact-message" class="block text-sm font-medium text-gray-700 mb-2">Zpráva *</label>
+							<label for="contact-message" class="block text-sm font-medium text-gray-700 mb-2">{$t('contact.formMessage')}</label>
 							<textarea 
 								id="contact-message" 
 								bind:value={contactForm.message}
 								required
 								rows="4"
-								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors"
-								placeholder="Co vás zajímá na našem glampingu?"
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand transition-colors"
+								placeholder="{$t('contact.formPlaceholder')}"
 							></textarea>
 						</div>
 						
@@ -157,22 +157,22 @@
 							class="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
 						>
 							{#if isSubmitting}
-								Odesílám...
+								{$t('contact.formSubmitting')}
 							{:else}
-								Odeslat zprávu
+								{$t('contact.formSubmit')}
 							{/if}
 						</button>
 					</form>
 				{:else}
 					<div class="text-center">
-						<div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-							<svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<div class="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center mx-auto mb-4">
+							<svg class="w-8 h-8 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
 							</svg>
 						</div>
-						<h3 class="text-xl font-bold text-gray-900 mb-2">Děkujeme!</h3>
+						<h3 class="text-xl font-bold text-gray-900 mb-2">{$t('contact.formSuccessTitle')}</h3>
 						<p class="text-gray-600">
-							Vaše zpráva byla úspěšně odeslána. Brzy vás budeme kontaktovat.
+							{$t('contact.formSuccessText')}
 						</p>
 					</div>
 				{/if}

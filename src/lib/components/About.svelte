@@ -1,9 +1,13 @@
+<script lang="ts">
+    import { t } from '$lib/i18n';
+</script>
+
 <section id="about" class="py-16 bg-white">
 	<div class="container-custom">
 		<div class="grid lg:grid-cols-2 gap-12 items-center">
 			<div>
 				<h2 class="text-3xl sm:text-4xl font-bold mb-6" style="color: #0b362a;">
-					Proč zvolit <span class="text-gradient">Micmanice</span>?
+					{@html $t('about.title').replace('Micmanice', '<span class=\"text-gradient\">Micmanice</span>')}
 				</h2>
 				
 				<div class="space-y-6">
@@ -14,10 +18,9 @@
 							</svg>
 						</div>
 						<div>
-							<h3 class="text-xl font-semibold text-gray-900 mb-2">Vinařská oblast</h3>
+							<h3 class="text-xl font-semibold text-gray-900 mb-2">{$t('about.wineTitle')}</h3>
 							<p class="text-gray-600">
-								Nacházíme se v srdci Jižní Moravy, obklopeni krásnými vinicemi a tradičními vinařskými sklepy. 
-								Ideální pro milovníky vína a romantických procházek.
+								{$t('about.wineText')}
 							</p>
 						</div>
 					</div>
@@ -29,10 +32,9 @@
 							</svg>
 						</div>
 						<div>
-							<h3 class="text-xl font-semibold text-gray-900 mb-2">Historické bunkry</h3>
+							<h3 class="text-xl font-semibold text-gray-900 mb-2">{$t('about.bunkersTitle')}</h3>
 							<p class="text-gray-600">
-								V okolí najdete zajímavé vojenské bunkry z období druhé světové války. 
-								Perfektní pro milovníky historie a dobrodružných výletů.
+								{$t('about.bunkersText')}
 							</p>
 						</div>
 					</div>
@@ -44,10 +46,9 @@
 							</svg>
 						</div>
 						<div>
-							<h3 class="text-xl font-semibold text-gray-900 mb-2">Blízko rakouských hranic</h3>
+							<h3 class="text-xl font-semibold text-gray-900 mb-2">{$t('about.borderTitle')}</h3>
 							<p class="text-gray-600">
-								Ideální poloha pro výlety do Rakouska. Můžete snadno navštívit Vídeň, 
-								Salzburg nebo krásné rakouské Alpy během vašeho pobytu.
+								{$t('about.borderText')}
 							</p>
 						</div>
 					</div>
@@ -59,10 +60,9 @@
 							</svg>
 						</div>
 						<div>
-							<h3 class="text-xl font-semibold text-gray-900 mb-2">Romantické zážitky</h3>
+							<h3 class="text-xl font-semibold text-gray-900 mb-2">{$t('about.romanceTitle')}</h3>
 							<p class="text-gray-600">
-								Večery pod hvězdami, snídaně v přírodě, procházky vinicemi. 
-								Vytvořte si nezapomenutelné vzpomínky se svým partnerem.
+								{$t('about.romanceText')}
 							</p>
 						</div>
 					</div>
@@ -71,14 +71,14 @@
 			
 			<div class="relative">
 				<img 
-					src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+					src="glamping_1.jpg" 
 					alt="Vinařská oblast Jižní Moravy" 
 					class="rounded-2xl shadow-2xl w-full h-96 object-cover"
 				/>
 				<div class="absolute -bottom-6 -left-6 text-white p-4 rounded-xl shadow-lg" style="background-color: #0b362a;">
 					<div class="text-center">
 						<div class="text-2xl font-bold">20%</div>
-						<div class="text-sm">sleva na první pobyt</div>
+						<div class="text-sm">{$t('about.discountText')}</div>
 					</div>
 				</div>
 			</div>

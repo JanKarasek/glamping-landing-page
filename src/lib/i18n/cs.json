@@ -1,0 +1,94 @@
+{
+  "header": {
+    "home": "Domů",
+    "why": "Proč?",
+    "moments": "Magické momenty",
+    "interest": "Mám zájem",
+    "openMenu": "Otevřít menu"
+  },
+  "hero": {
+    "title": "Glamping Micmanice",
+    "subtitle": "Romantika, příroda, vinařství",
+    "description": "Zažijte jedinečné ubytování v srdci Jižní Moravy. Komfortní glamping v krajině vinic, blízko rakouských hranic a historických bunkrů. Vytvořte si nezapomenutelné zážitky v přírodě.",
+    "cta": "Mám zájem o ubytování"
+  },
+  "modal": {
+    "title": "Zadejte svůj e-mail",
+    "subtitle": "Získáte 20% slevu na první pobyt",
+    "info": "Moc děkujeme za Váš zájem, vážíme si jej! Projekt je zatím v <b>přípravné fázi</b>. Pokud nám necháte e-mail, ozveme se vám ihned, jak bude vše připraveno, a zašleme vám slevový kód na <b>20% na první pobyt</b>.",
+    "emailLabel": "E-mail *",
+    "priceLabel": "Kolik byste byli ochotni zaplatit za noc? *",
+    "pricePlaceholder": "Vyberte cenovou kategorii",
+    "submit": "Odeslat zájem",
+    "submitting": "Odesílám...",
+    "successTitle": "Děkujeme!",
+    "successText": "Moc děkujeme za váš zájem o Glamping Micmanice! Projekt zatím připravujeme a jakmile bude vše hotové, ozveme se vám na e-mail. Pošleme vám také slevový kód na 20% na první pobyt.",
+    "close": "Zavřít"
+  },
+  "about": {
+    "title": "Proč zvolit Micmanice?",
+    "wineTitle": "Vinařská oblast",
+    "wineText": "Nacházíme se v srdci Jižní Moravy, obklopeni krásnými vinicemi a tradičními vinařskými sklepy. Ideální pro milovníky vína a romantických procházek.",
+    "bunkersTitle": "Historické bunkry",
+    "bunkersText": "V okolí najdete zajímavé vojenské bunkry z období druhé světové války. Perfektní pro milovníky historie a dobrodružných výletů.",
+    "borderTitle": "Blízko rakouských hranic",
+    "borderText": "Ideální poloha pro výlety do Rakouska. Můžete snadno navštívit Vídeň nebo krásné rakouské Alpy během vašeho pobytu.",
+    "romanceTitle": "Romantické zážitky",
+    "romanceText": "Večery pod hvězdami, snídaně v přírodě, procházky vinicemi. Vytvořte si nezapomenutelné vzpomínky se svým partnerem.",
+    "discountText": "sleva na první pobyt"
+  },
+  "gallery": {
+    "galleryTitle": "Magické momenty",
+    "description": "Představte si ty nejkrásnější chvíle, které můžete zažít v našem glampingu. Romantika, klid a nezapomenutelné zážitky čekají na vás.",
+    "slideDescription": "Nezapomenutelný zážitek v srdci Jižní Moravy",
+    "ctaText": "Chcete zažít tyto krásné momenty na vlastní kůži?",
+    "ctaButton": "Mám zájem o ubytování",
+    "prevAria": "Předchozí obrázek",
+    "nextAria": "Další obrázek",
+    "goToAria": "Přejít na obrázek",
+    "alt": {
+      "interior": "Luxusní glamping interiér",
+      "breakfast": "Romantická snídaně v glampingu",
+      "fire": "Večer u ohně v glampingu",
+      "landscape": "Vinařská oblast Jižní Moravy"
+    },
+    "title": {
+      "interior": "Luxusní interiér",
+      "breakfast": "Snídaně v přírodě",
+      "fire": "Večery u ohně",
+      "landscape": "Vinařská krajina"
+    },
+    "cta": "Mám zájem o ubytování"
+  },
+  "contact": {
+    "title": "Máte otázky?",
+    "description": "Rádi vám odpovíme na všechny vaše dotazy. Neváhejte nás kontaktovat!",
+    "emailTitle": "E-mail",
+    "phoneTitle": "Telefon",
+    "locationTitle": "Lokace",
+    "locationText": "Micmanice, Jižní Morava",
+    "offerTitle": "Speciální nabídka!",
+    "offerText": "Zaregistrujte se nyní a získejte 20% slevu na první pobyt v našem glampingu.",
+    "offerCta": "Zaregistrovat zájem",
+    "formTitle": "Napište nám",
+    "formName": "Jméno a příjmení *",
+    "formEmail": "E-mail *",
+    "formPhone": "Telefon",
+    "formMessage": "Zpráva *",
+    "formPlaceholder": "Co vás zajímá na našem glampingu?",
+    "formSubmitting": "Odesílám...",
+    "formSubmit": "Odeslat zprávu",
+    "formSuccessTitle": "Děkujeme!",
+    "formSuccessText": "Vaše zpráva byla úspěšně odeslána. Brzy vás budeme kontaktovat."
+  },
+  "footer": {
+    "title": "Glamping Micmanice",
+    "description": "Magické momenty v srdci Jižní Moravy. Romantika, klid a nezapomenutelné zážitky v krásné vinařské krajině.",
+    "contactTitle": "Kontakt",
+    "offerTitle": "Speciální nabídka",
+    "offerHighlight": "20% sleva na první pobyt!",
+    "offerText": "Zaregistrujte se nyní a získejte slevu",
+    "cta": "Mám zájem",
+    "copyright": "Glamping Micmanice. Všechna práva vyhrazena."
+  }
+}
